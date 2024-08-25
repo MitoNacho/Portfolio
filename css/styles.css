@@ -10831,7 +10831,7 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -11010,6 +11010,7 @@ html {
   transition: all 0.2s ease-in-out;
   opacity: 0;
   background-color: rgba(26, 188, 156, 0.9);
+  
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11073,3 +11074,34 @@ html {
     transform: scale(1.2);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+.separator {
+  width: 100%;
+  height: 85px; /* Puedes ajustar el grosor de la línea */
+  background-color: rgb(26, 188, 156); /* Color de la línea */
+  margin: 0px 0; /* Espacio alrededor de la línea */
+}
+
+/* Asegúrate de que el separador ocupe todo el ancho de la pantalla */
+.container {
+  max-width: 100%; /* Elimina el límite de ancho del contenedor */
+  padding: 0; /* Elimina el padding del contenedor */
+}
+
+/* Ajustes para la alineación de los elementos de la fila */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
