@@ -251,6 +251,7 @@ a {
 }
 a:hover {
   color: var(--bs-link-hover-color);
+  
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -343,6 +344,25 @@ label {
 
 button {
   border-radius: 0;
+}
+
+.custom-btn {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 300px; /* Fija un ancho máximo opcional */
+  height: 40px; /* Establece una altura uniforme */
+  background-color: #d0c7ff;
+  border: none;
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.custom-btn:hover {
+  background-color: #b0a7f2;
+  color: white;
+  
 }
 
 button:focus:not(:focus-visible) {
@@ -602,6 +622,7 @@ progress {
   max-width: 100%;
   height: auto;
 }
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -2800,6 +2821,7 @@ textarea.form-control-lg {
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -2810,6 +2832,9 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
+  transform: scale(1.04);
+  
+  
 }
 .btn-check + .btn:hover {
   color: var(--bs-btn-color);
@@ -2877,6 +2902,9 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: #2c3e50;
   --bs-btn-disabled-border-color: #2c3e50;
 }
+
+
+
 
 .btn-success {
   --bs-btn-color: #fff;
